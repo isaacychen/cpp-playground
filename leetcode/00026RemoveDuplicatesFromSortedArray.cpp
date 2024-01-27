@@ -3,7 +3,6 @@
 //
 
 #include <vector>
-#include <ranges>
 #include <algorithm>
 
 using namespace std;
@@ -11,18 +10,7 @@ using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int> &nums) {
-//        size_t j = 1;
-//        for (size_t i = 1; i < nums.size(); i++) {
-//            if (nums[i] != nums[i - 1]) {
-//                nums[j] = nums[i];
-//                j++;
-//            }
-//        }
-//        return static_cast<int>(j);
-        auto end = nums.end();
-        for (auto begin = nums.begin() + 1; begin < end; begin++) {
-            end = remove_if(begin, end, [begin](int x) { return x == *(begin - 1); });
-        }
+        auto end = nums.erase(unique(nums.begin(), nums.end()), nums.end());
         return static_cast<int>(distance(nums.begin(), end));
     }
 };
