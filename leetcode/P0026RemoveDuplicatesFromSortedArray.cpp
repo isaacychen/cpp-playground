@@ -7,22 +7,24 @@
 
 using namespace std;
 
-class Solution {
-public:
-    int removeDuplicates(vector<int> &nums) {
-        auto end = nums.erase(unique(nums.begin(), nums.end()), nums.end());
-        return static_cast<int>(distance(nums.begin(), end));
-    }
-};
+namespace p0022 {
+    class Solution {
+    public:
+        int removeDuplicates(vector<int> &nums) {
+            auto end = nums.erase(unique(nums.begin(), nums.end()), nums.end());
+            return static_cast<int>(distance(nums.begin(), end));
+        }
+    };
+}
 
 #include "gtest/gtest.h"
 
-class RemoveDuplicatesTest : public testing::TestWithParam<std::vector<int>> {
+class P0169MajorityElementTestcase : public testing::TestWithParam<std::vector<int>> {
 protected:
-    Solution solution;
+    p0022::Solution solution;
 };
 
-TEST_P(RemoveDuplicatesTest, CheckRemoveDuplicates) {
+TEST_P(P0169MajorityElementTestcase, Examples) {
     std::vector<int> nums = GetParam();
     int k = solution.removeDuplicates(nums);
 
@@ -36,8 +38,8 @@ TEST_P(RemoveDuplicatesTest, CheckRemoveDuplicates) {
     }
 }
 
-INSTANTIATE_TEST_SUITE_P(Tests,
-                         RemoveDuplicatesTest,
+INSTANTIATE_TEST_SUITE_P(P0169,
+                         P0169MajorityElementTestcase,
                          ::testing::Values(
                                  std::vector<int>{1, 1, 2},
                                  std::vector<int>{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}

@@ -8,20 +8,22 @@
 
 using namespace std;
 
-class Solution {
-public:
-    int removeElement(vector<int> &nums, int val) {
-        auto end = remove(nums.begin(), nums.end(), val);
-        return static_cast<int>(distance(nums.begin(), end));
-    }
-};
+namespace p0027 {
+    class Solution {
+    public:
+        int removeElement(vector<int> &nums, int val) {
+            auto end = remove(nums.begin(), nums.end(), val);
+            return static_cast<int>(distance(nums.begin(), end));
+        }
+    };
+}
 
 #include <gtest/gtest.h>
 
-TEST(RemoveElementTest, Test1) {
+TEST(P0027RemoveElement, Test1) {
     std::vector<int> nums = {3, 2, 2, 3};
     int val = 3;
-    Solution solution;
+    p0027::Solution solution;
     int k = solution.removeElement(nums, val);
 
     std::vector<int> expectedNums = {2, 2};
@@ -34,10 +36,10 @@ TEST(RemoveElementTest, Test1) {
     }
 }
 
-TEST(RemoveElementTest, Test2) {
+TEST(P0027RemoveElement, Test2) {
     std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
     int val = 2;
-    Solution solution;
+    p0027::Solution solution;
     int k = solution.removeElement(nums, val);
 
     std::vector<int> expectedNums = {0, 1, 4, 0, 3};

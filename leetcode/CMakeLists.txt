@@ -1,8 +1,10 @@
 add_executable(leetcode
-        00026RemoveDuplicatesFromSortedArray.cpp
-        00027RemoveElement.cpp
-        00088MergeSortedArray.cpp
-        00080RemoveDuplicatesFromSortedArray2.cpp
+        P0026RemoveDuplicatesFromSortedArray.cpp
+        P0027RemoveElement.cpp
+        P0088MergeSortedArray.cpp
+        P0080RemoveDuplicatesFromSortedArray2.cpp
+        P0169MajorityElement.cpp
+        P0189RotateArray.cpp
 )
 target_link_libraries(
         leetcode
