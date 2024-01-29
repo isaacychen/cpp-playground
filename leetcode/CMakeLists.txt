@@ -7,6 +7,7 @@ add_executable(leetcode
         P0189RotateArray.cpp
         P0121BestTimetoBuyandSellStock.cpp
         P0122BestTimetoBuyandSellStock2.cpp
+        P0055JumpGame.cpp
 )
 target_link_libraries(
         leetcode
