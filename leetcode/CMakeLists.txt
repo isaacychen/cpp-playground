@@ -5,6 +5,7 @@ add_executable(leetcode
         P0080RemoveDuplicatesFromSortedArray2.cpp
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
+        P0121BestTimetoBuyandSellStock.cpp
 )
 target_link_libraries(
         leetcode
