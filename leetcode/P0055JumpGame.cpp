@@ -22,11 +22,11 @@ namespace p0055 {
         }
     };
 
-    class LeedCode : public testing::TestWithParam<std::tuple<std::vector<int>, bool>> {
+    class P0055JumpGameTest : public testing::TestWithParam<std::tuple<std::vector<int>, bool>> {
     };
 
     // Define the test using the parameterized fixture
-    TEST_P(LeedCode, Testcases) {
+    TEST_P(P0055JumpGameTest, Testcases) {
         std::vector<int> input = std::get<0>(GetParam());
         const bool expectedResult = std::get<1>(GetParam());
 
@@ -36,7 +36,7 @@ namespace p0055 {
         ASSERT_EQ(result, expectedResult);
     }
 
-    INSTANTIATE_TEST_SUITE_P(P0055JumpGame, LeedCode,
+    INSTANTIATE_TEST_SUITE_P(LeedCode, P0055JumpGameTest,
                              testing::Values(
                                  std::make_tuple(std::vector<int>{2, 3, 1, 1, 4}, true),
                                  std::make_tuple(std::vector<int>{3, 2, 1, 0, 4}, false),

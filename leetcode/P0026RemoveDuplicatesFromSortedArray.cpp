@@ -19,12 +19,12 @@ namespace p0022 {
 
 #include "gtest/gtest.h"
 
-class P0169MajorityElementTestcase : public testing::TestWithParam<std::vector<int>> {
+class P0026RemoveDuplicatesFromSortedArrayTest : public testing::TestWithParam<std::vector<int>> {
 protected:
     p0022::Solution solution;
 };
 
-TEST_P(P0169MajorityElementTestcase, Examples) {
+TEST_P(P0026RemoveDuplicatesFromSortedArrayTest, Testcases) {
     std::vector<int> nums = GetParam();
     int k = solution.removeDuplicates(nums);
 
@@ -38,8 +38,8 @@ TEST_P(P0169MajorityElementTestcase, Examples) {
     }
 }
 
-INSTANTIATE_TEST_SUITE_P(P0169,
-                         P0169MajorityElementTestcase,
+INSTANTIATE_TEST_SUITE_P(LeedCode,
+                         P0026RemoveDuplicatesFromSortedArrayTest,
                          ::testing::Values(
                                  std::vector<int>{1, 1, 2},
                                  std::vector<int>{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}

@@ -1,13 +1,14 @@
 add_executable(leetcode
         P0026RemoveDuplicatesFromSortedArray.cpp
         P0027RemoveElement.cpp
+        P0045JumpGame2.cpp
+        P0055JumpGame.cpp
         P0088MergeSortedArray.cpp
         P0080RemoveDuplicatesFromSortedArray2.cpp
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
         P0121BestTimetoBuyandSellStock.cpp
         P0122BestTimetoBuyandSellStock2.cpp
-        P0055JumpGame.cpp
 )
 target_link_libraries(
         leetcode
