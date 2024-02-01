@@ -10,6 +10,7 @@ add_executable(leetcode
         P0135Candy.cpp
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
+        P0042TrappingRainWater.cpp
 )
 target_link_libraries(
         leetcode
