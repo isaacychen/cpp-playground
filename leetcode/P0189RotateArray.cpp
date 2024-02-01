@@ -23,12 +23,12 @@ namespace p0189 {
 #include <gtest/gtest.h>
 
 // Define a test fixture
-class P0189RotateArrayTest : public ::testing::TestWithParam<std::tuple<std::vector<int>, int, std::vector<int>>> {
+class P0189RotateArrayTest : public testing::TestWithParam<std::tuple<std::vector<int>, int, std::vector<int>>> {
 };
 
 // Define the parameterized test suite
 INSTANTIATE_TEST_SUITE_P(LeedCode, P0189RotateArrayTest,
-                         ::testing::Values(
+                         testing::Values(
                              // Test case 1
                              std::make_tuple(std::vector<int>{1, 2, 3, 4, 5, 6, 7}, 3, std::vector<int>{5, 6, 7, 1, 2, 3
                                  , 4}),
