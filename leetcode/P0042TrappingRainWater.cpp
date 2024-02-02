@@ -21,7 +21,7 @@ namespace p0135 {
                 left_shadow[i] = max(height[i], left_shadow[i - 1]);
 
             for (size_t i = height.size() - 1; i > 0; --i)
-                right_shadow[i -1] = max(height[i -1], right_shadow[i]);
+                right_shadow[i - 1] = max(height[i - 1], right_shadow[i]);
 
             int water = 0;
             for (size_t i = 0; i < height.size(); ++i) {
@@ -29,6 +29,14 @@ namespace p0135 {
             }
 
             return water;
+
+            // int l = 0, r = height.size() - 1, lmax = INT_MIN, rmax = INT_MIN, ans = 0;
+            // while (l < r) {
+            //     lmax = max(lmax, height[l]);
+            //     rmax = max(rmax, height[r]);
+            //     ans += (lmax < rmax) ? lmax - height[l++] : rmax - height[r--];
+            // }
+            // return ans;
         }
     };
 }

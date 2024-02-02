@@ -11,6 +11,7 @@ add_executable(leetcode
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
         P0042TrappingRainWater.cpp
+        P0209MinimumSizeSubarraySum.cpp
 )
 target_link_libraries(
         leetcode
