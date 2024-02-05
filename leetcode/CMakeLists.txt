@@ -1,8 +1,10 @@
 add_executable(leetcode
         P0026RemoveDuplicatesFromSortedArray.cpp
         P0027RemoveElement.cpp
+        P0042TrappingRainWater.cpp
         P0045JumpGame2.cpp
         P0055JumpGame.cpp
+        P0070ClimbingStairs.cpp
         P0088MergeSortedArray.cpp
         P0080RemoveDuplicatesFromSortedArray2.cpp
         P0121BestTimeToBuyAndSellStock.cpp
@@ -10,8 +12,8 @@ add_executable(leetcode
         P0135Candy.cpp
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
-        P0042TrappingRainWater.cpp
         P0209MinimumSizeSubarraySum.cpp
+
 )
 target_link_libraries(
         leetcode
