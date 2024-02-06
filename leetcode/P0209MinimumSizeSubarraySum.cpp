@@ -9,7 +9,7 @@
 
 using namespace std;
 
-namespace p0042 {
+namespace p0209 {
     class Solution {
     public:
         int minSubArrayLen(int target, vector<int>& nums) {
@@ -50,7 +50,7 @@ TEST_P(P0209MinimumSizeSubarraySumTest, Testcases) {
     std::vector<int> nums = std::get<1>(GetParam());
     const int expected_output = std::get<2>(GetParam());
 
-    p0042::Solution solution;
+    p0209::Solution solution;
     const int result = solution.minSubArrayLen(target, nums);
 
     ASSERT_EQ(result, expected_output);

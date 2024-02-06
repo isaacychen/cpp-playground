@@ -9,7 +9,7 @@
 
 using namespace std;
 
-namespace p0135 {
+namespace p0042 {
     class Solution {
     public:
         int trap(vector<int>& height) {
@@ -57,7 +57,7 @@ TEST_P(P0042TrappingRainWaterTest, Testcases) {
     std::vector<int> input = std::get<0>(GetParam());
     const int expected_output = std::get<1>(GetParam());
 
-    p0135::Solution solution;
+    p0042::Solution solution;
     const int result = solution.trap(input);
 
     ASSERT_EQ(result, expected_output);

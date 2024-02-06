@@ -7,7 +7,7 @@
 
 using namespace std;
 
-namespace p0022 {
+namespace p0026 {
     class Solution {
     public:
         int removeDuplicates(vector<int> &nums) {
@@ -21,7 +21,7 @@ namespace p0022 {
 
 class P0026RemoveDuplicatesFromSortedArrayTest : public testing::TestWithParam<std::vector<int>> {
 protected:
-    p0022::Solution solution;
+    p0026::Solution solution;
 };
 
 TEST_P(P0026RemoveDuplicatesFromSortedArrayTest, Testcases) {

@@ -13,6 +13,7 @@ add_executable(leetcode
         P0169MajorityElement.cpp
         P0189RotateArray.cpp
         P0209MinimumSizeSubarraySum.cpp
+        P0198HouseRobber.cpp
 
 )
 target_link_libraries(

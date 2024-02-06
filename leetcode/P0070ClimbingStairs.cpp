@@ -11,7 +11,7 @@ using namespace std;
 
 #include <map>
 
-namespace p0042 {
+namespace p0070 {
     class Solution {
     private:
         std::map<int, int> cache;
@@ -59,7 +59,7 @@ TEST_P(P0070ClimbingStairsTest, Testcases) {
     const int input = std::get<0>(GetParam());
     const int expected_output = std::get<1>(GetParam());
 
-    p0042::Solution solution;
+    p0070::Solution solution;
     const int output = solution.climbStairs(input);
 
     ASSERT_EQ(output, expected_output);
