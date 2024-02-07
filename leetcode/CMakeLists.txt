@@ -14,6 +14,7 @@ add_executable(leetcode
         P0189RotateArray.cpp
         P0209MinimumSizeSubarraySum.cpp
         P0198HouseRobber.cpp
+        P0120Triangle.cpp
 
 )
 target_link_libraries(
