@@ -15,6 +15,7 @@ add_executable(leetcode
         P0209MinimumSizeSubarraySum.cpp
         P0198HouseRobber.cpp
         P0120Triangle.cpp
+        P0053MaximumSubarray.cpp
 
 )
 target_link_libraries(

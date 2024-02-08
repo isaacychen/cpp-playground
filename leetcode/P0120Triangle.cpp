@@ -16,9 +16,9 @@ namespace p0120 {
             // f(tri_n_m) = tri_n_m[0][0] + min(f(tri_n_m-1[0]), ..., f(tri_n_m-1[n-m])))
             // f(tri_n_0) = tri[0][0]
             return accumulate(
-                triangle.rbegin(),
+                ++triangle.rbegin(),
                 triangle.rend(),
-                vector(triangle.size() + 1, 0),
+                triangle.back(),
                 [](auto acc, const auto& row) {
                     for (size_t i = 0; i < row.size(); ++i) {
                         acc[i] = row[i] + min(acc[i], acc[i + 1]);
