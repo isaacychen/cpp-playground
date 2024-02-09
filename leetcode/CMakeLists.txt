@@ -16,6 +16,7 @@ add_executable(leetcode
         P0198HouseRobber.cpp
         P0120Triangle.cpp
         P0053MaximumSubarray.cpp
+        P0124BinaryTreeMaximumPathSum.cpp
 
 )
 target_link_libraries(
