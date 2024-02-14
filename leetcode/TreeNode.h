@@ -12,8 +12,8 @@ using namespace std;
 namespace cppp {
     struct TreeNode {
         int val;
-        TreeNode* left;
-        TreeNode* right;
+        TreeNode* left = nullptr;
+        TreeNode* right = nullptr;
 
         // // unique_ptr<TreeNode> left;
         // // unique_ptr<TreeNode> right;
