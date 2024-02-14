@@ -17,6 +17,7 @@ add_executable(leetcode
         P0120Triangle.cpp
         P0053MaximumSubarray.cpp
         P0124BinaryTreeMaximumPathSum.cpp
+        P0199BinaryTreeRightSideView.cpp
 
 )
 target_link_libraries(
@@ -27,4 +28,6 @@ gtest_discover_tests(leetcode)
 
 add_executable(cpp-playground
         main.cpp
+        TreeNode.cpp
+        TreeNode.h
 )
